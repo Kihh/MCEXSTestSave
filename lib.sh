@@ -1,3 +1,1 @@
-apt-get update
-apt install openjdk-8-jdk-headless -y
-apt install screen -y
+screen -dmS mc java -Xms512m -Xmx512m -jar server.jar nogui

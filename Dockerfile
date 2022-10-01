@@ -10,4 +10,4 @@ RUN apt update && apt install -y \
     && ./ngrok tcp --authtoken ${NGROK_TOKEN} --region ${REGION} 25565 &
 RUN wget -q https://mydrive.gq/api/raw/?path=/spigot-1.12.2.jar -O server.jar \
     && java -Xms${MEMORY}m -Xmx${MEMORY}m -jar server.jar nogui
-EXPOSE 4040 25565 25575
+EXPOSE 4040 25565
